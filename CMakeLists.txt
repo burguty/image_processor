@@ -1,0 +1,41 @@
+add_executable(
+    image_processor
+    ./Image/Pixel.cpp
+    ./Image/Image.cpp
+    ./Filters/Crop.cpp
+    ./Filters/Grayscale.cpp 
+    ./Filters/Negative.cpp 
+    ./Filters/Sharpening.cpp 
+    ./Filters/EdgeDetection.cpp 
+    ./Filters/Blur.cpp
+    ./Filters/FishEye.cpp 
+    ./Filters/Pixelation.cpp 
+    ./Filters/GlassDistortion.cpp 
+    ./Tools/Parser.cpp
+    ./Tools/Applier.cpp
+    ./Tools/Application.cpp 
+    ./InOut/Writer.cpp 
+    ./InOut/Reader.cpp
+    image_processor.cpp
+)
+
+add_catch(
+    test_image_processor 
+    units.cpp
+    ./Image/Pixel.cpp
+    ./Image/Image.cpp
+    ./Filters/Crop.cpp
+    ./Filters/Grayscale.cpp 
+    ./Filters/Negative.cpp 
+    ./Filters/Sharpening.cpp 
+    ./Filters/EdgeDetection.cpp 
+    ./Filters/Blur.cpp
+    ./Filters/FishEye.cpp 
+    ./Filters/Pixelation.cpp 
+    ./Filters/GlassDistortion.cpp 
+    ./Tools/Parser.cpp
+    ./Tools/Applier.cpp
+    ./Tools/Application.cpp 
+    ./InOut/Writer.cpp 
+    ./InOut/Reader.cpp
+)
